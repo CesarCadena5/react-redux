@@ -7,6 +7,7 @@ import { ModuleRouter } from './ModuleRouter';
 export function AppRouter() {
 
     const { status } = useCheckAuth();
+    console.log('está en app router', status)
 
     if (status === 'checking') return <LoadingChecking />
 
@@ -18,7 +19,7 @@ export function AppRouter() {
                     : (<Route path='auth/*' element={<AuthRoutes />} />)
             }
 
-            <Route path='/*' element={<Navigate to='/auth/login' />} />
+            {/* <Route path='/*' element={<Navigate to='/auth/login' />} /> */}
         </Routes>
     );
 }

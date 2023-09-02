@@ -6,7 +6,7 @@ export const ImagesRoutes = () => {
     return (
         <>
             <Routes>
-                <Route path="/" element={<ImagesPages />} />
+                <Route path="imagenes" element={<ImagesPages />} />
             </Routes>
         </>
     );

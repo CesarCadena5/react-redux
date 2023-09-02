@@ -6,7 +6,7 @@ export const MarvelRoutes = () => {
     return (
         <>
             <Routes>
-                <Route path="/*" element={<MarvelPersonajePage />} />
+                <Route path="personajes" element={<MarvelPersonajePage />} />
             </Routes>
         </>
     );
