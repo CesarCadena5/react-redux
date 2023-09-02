@@ -1,0 +1,91 @@
+.df-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #44878f;
+    color: #efaaa3;
+}
+
+.hijo {
+    background-color: #5a9b95;
+    min-width: 25%;
+    min-height: 45%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 60%;
+    margin: 7px;
+}
+
+.form input:required {
+    border-color: rgba(255, 0, 0, 0.562);
+}
+
+.form input:invalid {
+    border-color: rgba(255, 0, 0, 0.562);
+}
+
+.form input:focus {
+    border-color: #858dff;
+}
+
+.form label {
+    font-weight: bold;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form small {
+    color: rgba(94, 36, 36, 0.795);
+    font-weight: bold;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-form {
+    margin: 4px;
+    width: 40%;
+    border: 2px solid tomato;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    color: #ff8591;
+}
+
+input {
+    width: 100%;
+    border: 2px solid rgba(22, 22, 22, 0.233);
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    height: 18%;
+    color: #44878f;
+}
+
+.enlace-crear {
+    text-decoration: overline;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
