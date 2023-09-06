@@ -16,13 +16,23 @@ export const Navbar = () => {
         <nav className='navbar'>
             <ul>
                 <li >
-                    <NavLink to="/">
-                        ImagenesApp
+                    <NavLink
+                        className={({ isActive }) => (isActive ? 'ruta-activa' : '')}
+                        to="/imagenes">
+                        Imagenes
+                    </NavLink>
+                </li>
+
+                <li >
+                    <NavLink
+                        className={({ isActive }) => (isActive) ? 'ruta-activa' : ''}
+                        to="/marvel/personajes">
+                        Marvel
                     </NavLink>
                 </li>
 
                 <li>
-                    {displayName}
+                    <small>  {displayName} </small>
                     <button onClick={onLogout}>
                         Salir
                     </button>

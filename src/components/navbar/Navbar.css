@@ -1,6 +1,7 @@
 .navbar {
     height: 55px;
     background-color: #44878f;
+    border-radius: 5px;
 }
 
 .navbar * {
@@ -15,6 +16,26 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 364px) {
+    .navbar ul {
+        flex-direction: column;
+
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .navbar small {
+        font-size: 13px;
+    }
+
+    .navbar button {
+        background-color: #44878f;
+    }
 }
 
 .navbar li,
@@ -37,4 +58,9 @@ a {
     text-overflow: ellipsis;
     cursor: pointer;
     color: #ff8591;
+}
+
+.ruta-activa {
+    color: rgb(207, 54, 105);
+    text-decoration: overline;
 }

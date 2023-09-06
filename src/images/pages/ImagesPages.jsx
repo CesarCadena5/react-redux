@@ -5,8 +5,7 @@ import { getImages } from "../../store/images/thunks";
 import { LoadingChecking } from "../../components/loading/LoadingChecking";
 import { Error } from "../../components/error/Error";
 
-import '../styles/ImagesPages.css';
-
+import '../../styles/Style.css';
 
 export const ImagesPages = () => {
     const dispatch = useDispatch();
@@ -29,7 +28,6 @@ export const ImagesPages = () => {
             <div className="grid">
                 {
                     imagenes.map((imagen) => {
-
                         return <div className="grid__item" key={imagen.id}>
                             <div className="card">
                                 <img className="card__img" src={imagen.urls.small} alt={imagen.alt_description} />

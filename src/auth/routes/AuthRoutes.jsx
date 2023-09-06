@@ -3,7 +3,6 @@ import { LoginPage } from '../pages/LoginPage';
 import { RegisterPage } from '../pages/RegisterPage';
 
 export const AuthRoutes = () => {
-    console.log('entra en auth')
     return (
         <Routes>
             <Route path='login' element={<LoginPage />} />

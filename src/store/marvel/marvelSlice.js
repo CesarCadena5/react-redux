@@ -13,9 +13,9 @@ export const marvelSlice = createSlice({
         setIsLoading: (state) => {
             state.loading = true;
         },
-        setImageMarvel: (state, { payload }) => {
+        setMarvelPersonaje: (state, { payload }) => {
             state.loading = false;
-            state.dataMarvel = payload.dataImages;
+            state.dataMarvel = payload.dataMarvel;
             state.error = null;
         },
         setError: (state, { payload }) => {
@@ -27,4 +27,4 @@ export const marvelSlice = createSlice({
 });
 
 
-export const { setIsLoading, setImageMarvel, setError } = marvelSlice.actions;
+export const { setIsLoading, setMarvelPersonaje, setError } = marvelSlice.actions;
